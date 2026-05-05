@@ -6,7 +6,7 @@ const initialForm = {
   name: "",
   institution: "",
   email: "",
-  reason: "Informacion sobre Neurion Signal",
+  reason: "Información sobre Neurion Signal",
   message: "",
 };
 
@@ -58,8 +58,8 @@ export default function Contact({ onSubmit }) {
             Conversemos sobre tu laboratorio, curso o roadmap de producto.
           </h2>
           <p className="mt-6 text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
-            Si formas parte de una institucion, laboratorio, centro educativo o proyecto vinculado
-            a neurotecnologia, bioinstrumentacion o asistencia tecnologica, esta nueva estructura
+            Si formas parte de una institución, laboratorio, centro educativo o proyecto vinculado
+            a neurotecnología, bioinstrumentación o asistencia tecnológica, esta nueva estructura
             ya permite pedir demos, recursos o colaboraciones sin mezclar necesidades distintas.
           </p>
 
@@ -128,10 +128,10 @@ export default function Contact({ onSubmit }) {
                 onChange={handleChange}
                 className="w-full rounded-2xl border border-[#DCE3E8] bg-white px-4 py-3 outline-none transition focus:border-[#38B26D]"
               >
-                <option>Informacion sobre Neurion Signal</option>
+                <option>Información sobre Neurion Signal</option>
                 <option>Demo institucional</option>
                 <option>Recursos educativos</option>
-                <option>Colaboracion de investigacion</option>
+                <option>Colaboración de investigación</option>
                 <option>Proyecto protesico</option>
                 <option>Desarrollo a medida</option>
               </select>
@@ -173,8 +173,8 @@ export default function Contact({ onSubmit }) {
           ) : null}
 
           <p className="mt-4 text-xs leading-5 text-[#5E6A73]">
-            Uso previsto: educacion, investigacion y prototipado. No destinado a diagnostico
-            clinico salvo indicacion y certificacion especifica.
+            Uso previsto: educación, investigación y prototipado. No destinado a diagnóstico
+            clínico salvo indicación y certificación específica.
           </p>
         </form>
       </div>

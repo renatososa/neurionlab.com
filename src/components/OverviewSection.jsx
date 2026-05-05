@@ -5,12 +5,12 @@ const overviewItems = [
   {
     icon: "cpu",
     title: "Hardware real",
-    text: "Plataformas robustas, modulares y escalables para trabajo en aula, demostracion tecnica y exploracion experimental.",
+    text: "Plataformas robustas, modulares y escalables para trabajo en aula, demostración técnica y exploración experimental.",
   },
   {
     icon: "signal",
     title: "Software guiado",
-    text: "Visualizacion en tiempo real, configuracion operativa y una GUI que acompana sin esconder profundidad tecnica.",
+    text: "Visualización en tiempo real, configuración operativa y una GUI que acompaña sin esconder profundidad técnica.",
   },
   {
     icon: "layers",
@@ -26,7 +26,7 @@ export default function OverviewSection() {
         <div className="mx-auto max-w-3xl text-center">
           <SectionLabel>Pilares del sistema</SectionLabel>
           <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] text-[#1F252B] sm:text-4xl md:text-5xl">
-            Tres capas para sostener una marca biomedica escalable.
+            Tres capas para sostener una marca biomédica escalable.
           </h2>
           <p className="mt-6 text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
             La home deja de vender un objeto aislado y empieza a mostrar un sistema coherente:

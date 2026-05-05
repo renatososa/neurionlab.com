@@ -18,13 +18,13 @@ const applications = [
     icon: "cable",
     title: "Control de dispositivos externos",
     subtitle: "Interfaces fisicas y pruebas",
-    text: "Base para accionar protesis, actuadores, prototipos interactivos o experiencias de accesibilidad con hardware conectado.",
+    text: "Base para accionar prótesis, actuadores, prototipos interactivos o experiencias de accesibilidad con hardware conectado.",
   },
   {
     icon: "graduation",
     title: "Laboratorios guiados",
     subtitle: "Docencia con profundidad",
-    text: "Secuencias didacticas para que un estudiante no solo mida, sino que entienda setup, calidad de senal y contexto de uso.",
+    text: "Secuencias didácticas para que un estudiante no solo mida, sino que entienda setup, calidad de señal y contexto de uso.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Applications() {
             Casos de uso que ayudan a proyectar el valor del sistema.
           </h2>
           <p className="mt-6 text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
-            Esta seccion ya no enumera solo tipos de senal. Muestra escenarios concretos para que
+            Esta sección ya no enumera solo tipos de señal. Muestra escenarios concretos para que
             investigadores, docentes y makers entiendan donde entra Neurion LAB en su trabajo.
           </p>
         </div>
@@ -63,8 +63,8 @@ export default function Applications() {
 
         <div className="mt-10 rounded-[2rem] border border-[#DCE3E8] bg-[#F7F9FA] p-6 text-sm leading-7 text-[#5E6A73]">
           <strong className="text-[#1F252B]">Uso previsto:</strong> Neurion Signal y el ecosistema
-          Neurion LAB estan orientados a educacion, investigacion y prototipado. No estan
-          destinados a diagnostico clinico salvo indicacion y certificacion especifica.
+          Neurion LAB están orientados a educación, investigación y prototipado. No están
+          destinados a diagnóstico clínico salvo indicación y certificación específica.
         </div>
       </div>
     </section>

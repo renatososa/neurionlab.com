@@ -11,7 +11,7 @@ const resources = [
   },
   {
     title: "Manuales y laboratorios",
-    text: "Guias curriculares, practicas descargables y ejemplos de uso para docencia, investigacion y makers.",
+    text: "Guías curriculares, prácticas descargables y ejemplos de uso para docencia, investigación y makers.",
   },
 ];
 

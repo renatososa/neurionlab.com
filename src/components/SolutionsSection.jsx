@@ -6,15 +6,15 @@ const solutions = [
     id: "educacion",
     icon: "graduation",
     title: "Educacion",
-    text: "Guias curriculares, laboratorios progresivos y una experiencia guiada para cursos de bioinstrumentacion, neurotecnologia y senales.",
+    text: "Guías curriculares, laboratorios progresivos y una experiencia guiada para cursos de bioinstrumentación, neurotecnología y señales.",
     bullets: ["Practicas paso a paso", "Lenguaje claro para aula", "Recursos listos para docencia"],
   },
   {
     id: "investigacion",
     icon: "microscope",
     title: "Investigacion",
-    text: "Especificaciones, lectura multicanal y una base de software preparada para filtros, marcadores y validacion temprana de experimentos.",
-    bullets: ["Precision de senal", "Escalabilidad de canales", "Exportacion para analisis"],
+    text: "Especificaciones, lectura multicanal y una base de software preparada para filtros, marcadores y validación temprana de experimentos.",
+    bullets: ["Precisión de señal", "Escalabilidad de canales", "Exportación para análisis"],
   },
   {
     id: "prototipado",

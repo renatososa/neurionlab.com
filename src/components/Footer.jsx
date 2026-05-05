@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="max-w-xl">
           <BrandLogo showTagline />
           <p className="mt-4 text-sm leading-6 text-[#5E6A73]">
-            Tecnologia biomedica accesible para investigacion, educacion y asistencia.
+            Tecnología biomédica accesible para investigación, educación y asistencia.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function Footer() {
                 Neurion Signal
               </a>
               <a href="#protesis" className="transition hover:text-[#1F252B]">
-                Sistemas protesicos
+                Sistemas protésicos
               </a>
               <a href="#recursos" className="transition hover:text-[#1F252B]">
                 Recursos y documentacion
@@ -49,9 +49,9 @@ export default function Footer() {
         </div>
 
         <div className="max-w-xl rounded-2xl border border-[#DCE3E8] bg-white p-4 text-xs leading-5 text-[#5E6A73]">
-          <strong className="text-[#1F252B]">Uso previsto:</strong> Neurion Signal y las lineas
-          futuras del ecosistema estan orientadas a educacion, investigacion y prototipado. No
-          estan destinadas a diagnostico clinico salvo indicacion y certificacion especifica.
+          <strong className="text-[#1F252B]">Uso previsto:</strong> Neurion Signal y las líneas
+          futuras del ecosistema están orientadas a educación, investigación y prototipado. No
+          están destinadas a diagnóstico clínico salvo indicación y certificación específica.
         </div>
       </div>
     </footer>

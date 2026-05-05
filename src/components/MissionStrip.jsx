@@ -1,9 +1,9 @@
 import SectionLabel from "./SectionLabel";
 
 const validationItems = [
-  "Tecnologia creada en Uruguay",
+  "Tecnología creada en Uruguay",
   "Pensada para universidades y laboratorios",
-  "Lista para congresos y demos tecnicas",
+  "Lista para congresos y demos técnicas",
   "Escalable hacia proyectos de asistencia",
 ];
 
@@ -14,7 +14,7 @@ export default function MissionStrip() {
         <div>
           <SectionLabel>Mision</SectionLabel>
           <h2 className="mt-4 text-2xl font-bold tracking-[-0.04em] text-[#1F252B] sm:text-3xl">
-            Tecnologia biomedica desde Uruguay para el mundo.
+            Tecnología biomédica desde Uruguay para el mundo.
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5E6A73] sm:text-base">
             Neurion LAB organiza hardware, software y fabricacion abierta como una plataforma que

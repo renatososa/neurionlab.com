@@ -1,6 +1,6 @@
 import SectionLabel from "./SectionLabel";
 
-const values = ["Accesible", "Biomedica", "Experimental"];
+const values = ["Accesible", "Biomédica", "Experimental"];
 
 export default function AboutSection() {
   return (
@@ -16,10 +16,10 @@ export default function AboutSection() {
             </div>
             <div>
               <p className="text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
-                Neurion LAB nace para desarrollar herramientas biomedicas accesibles que permitan
-                formar, investigar y prototipar soluciones de neurotecnologia y asistencia. La
-                nueva arquitectura refuerza esa vision: democratizacion, trabajo regional,
-                fabricacion local y una expansion ordenada hacia nuevas lineas de producto.
+                Neurion LAB nace para desarrollar herramientas biomédicas accesibles que permitan
+                formar, investigar y prototipar soluciones de neurotecnología y asistencia. La
+                nueva arquitectura refuerza esa visión: democratización, trabajo regional,
+                fabricación local y una expansión ordenada hacia nuevas líneas de producto.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3">

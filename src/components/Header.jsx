@@ -74,7 +74,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href="#contacto">Solicitar informacion</Button>
+          <Button href="#contacto">Solicitar información</Button>
         </div>
 
         <button
@@ -137,7 +137,7 @@ export default function Header() {
             )}
 
             <Button href="#contacto" className="mt-2 w-full" onClick={() => setOpen(false)}>
-              Solicitar informacion
+              Solicitar información
             </Button>
           </div>
         </div>

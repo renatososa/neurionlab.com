@@ -4,23 +4,23 @@ const navItems = [
     children: [
       { label: "Neurion Signal", href: "#signal", description: "Biopotenciales multicanal disponible." },
       {
-        label: "Sistemas protesicos",
+        label: "Sistemas protésicos",
         href: "#protesis",
-        description: "Control mioelectrico y asistencia en desarrollo.",
+        description: "Control mioeléctrico y asistencia en desarrollo.",
         badge: "Beta",
       },
       {
         label: "Kits educativos",
         href: "#kits",
-        description: "Hardware modular para aula y practicas guiadas.",
+        description: "Hardware modular para aula y prácticas guiadas.",
       },
     ],
   },
   {
     label: "Soluciones",
     children: [
-      { label: "Educacion", href: "#educacion", description: "Guias curriculares y laboratorios aplicados." },
-      { label: "Investigacion", href: "#investigacion", description: "Precision, filtros y lectura de senal." },
+      { label: "Educación", href: "#educacion", description: "Guías curriculares y laboratorios aplicados." },
+      { label: "Investigación", href: "#investigacion", description: "Precisión, filtros y lectura de señal." },
       { label: "Prototipado", href: "#prototipado", description: "Fabricacion digital y open hardware." },
     ],
   },

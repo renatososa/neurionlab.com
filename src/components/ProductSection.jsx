@@ -14,8 +14,8 @@ const products = [
   {
     id: "protesis",
     status: "Beta",
-    title: "Sistemas protesicos",
-    text: "Linea futura enfocada en control mioelectrico, modularidad mecanica y asistencia accesible mediante fabricacion digital.",
+    title: "Sistemas protésicos",
+    text: "Línea futura enfocada en control mioeléctrico, modularidad mecánica y asistencia accesible mediante fabricación digital.",
     bullets: ["Mioelectrico", "Piezas 3D", "Validacion de uso", "Evolucion abierta"],
     icon: "handheart",
   },
@@ -23,7 +23,7 @@ const products = [
     id: "kits",
     status: "Roadmap",
     title: "Kits educativos",
-    text: "Hardware modular para aula, practicas guiadas y recursos que ayuden a entrar al ecosistema sin una curva tecnica agresiva.",
+    text: "Hardware modular para aula, prácticas guiadas y recursos que ayuden a entrar al ecosistema sin una curva técnica agresiva.",
     bullets: ["Laboratorios listos", "Aula modular", "Recursos descargables", "Trayectos por nivel"],
     icon: "graduation",
   },
@@ -40,7 +40,7 @@ export default function ProductSection() {
           </h2>
           <p className="mt-6 text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
             La arquitectura propuesta funciona porque ordena lo disponible hoy, lo que esta en
-            validacion y lo que puede crecer como puerta de entrada educativa.
+            validación y lo que puede crecer como puerta de entrada educativa.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function ProductSection() {
                 Narrativa de marca
               </p>
               <h3 className="mt-2 text-2xl font-bold">
-                Disponible, en validacion y en roadmap: todo convive sin confundir al visitante.
+                Disponible, en validación y en roadmap: todo convive sin confundir al visitante.
               </h3>
             </div>
             <div className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/80">
@@ -110,7 +110,7 @@ export default function ProductSection() {
             </div>
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button href="#contacto">Solicitar informacion</Button>
+            <Button href="#contacto">Solicitar información</Button>
             <Button href="#recursos" variant="secondary">
               Explorar documentacion
             </Button>

@@ -49,7 +49,7 @@ function HeroVisual({ panel, status }) {
 
         <img
           src={prostheticsRender}
-          alt="Render de protesis desarrollada por Neurion para asistencia y control mioelectrico."
+          alt="Render de prótesis desarrollada por Neurion para asistencia y control mioeléctrico."
           className="relative z-10 mx-auto w-full max-w-[420px] object-contain drop-shadow-[0_24px_36px_rgba(31,37,43,0.2)]"
         />
       </div>
@@ -75,7 +75,7 @@ function HeroVisual({ panel, status }) {
         <div className="relative z-10 w-full overflow-hidden rounded-[1.8rem] border border-[#DCE3E8] bg-white p-3 shadow-[0_24px_50px_-32px_rgba(31,37,43,0.35)] sm:p-4">
           <img
             src={guiCapture}
-            alt="Captura de la GUI propia de Neurion para adquisicion, monitor en vivo y medicion de senales."
+            alt="Captura de la GUI propia de Neurion para adquisición, monitor en vivo y medición de señales."
             className="block h-full w-full object-contain object-center"
           />
         </div>
@@ -151,14 +151,14 @@ export default function Hero() {
         <div className="grid gap-14 lg:grid-cols-[0.88fr_1.12fr] lg:gap-12">
           <div ref={leftColumnRef} className="flex max-w-2xl flex-col">
             <h1 className="text-balance text-[2.55rem] font-bold leading-[1.08] tracking-[-0.025em] text-[#1F252B] sm:text-[2.85rem] sm:leading-[1.06] md:text-[3.2rem] md:leading-[1.04] lg:text-[4rem] lg:leading-[0.98]">
-            Herramientas biomedicas para
-            <span className="block text-[#38B26D]">formacion, investigacion y prototipado.</span>
+            Herramientas biomédicas accesibles para
+            <span className="block text-[#38B26D]">formación, investigación y prototipado.</span>
           </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
-              Neurion LAB disena y desarrolla plataformas para adquirir, procesar y visualizar
-              senales biologicas. Integramos hardware, software, fabricacion local y soporte tecnico
-              para acercar la neurotecnologia y la bionica a instituciones educativas, laboratorios y
+              Neurion LAB diseña y desarrolla plataformas para adquirir, procesar y visualizar
+              señales biológicas. Integramos hardware, software, fabricación local y soporte técnico
+              para acercar la neurotecnología y la biónica a instituciones educativas, laboratorios y
               equipos que necesitan herramientas reales para aprender, investigar y construir.
             </p>
 

@@ -10,10 +10,10 @@ export default function SoftwareSection() {
         <div className="max-w-2xl">
           <SectionLabel dark>Software</SectionLabel>
           <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] sm:text-4xl md:text-5xl">
-            La interfaz tambien comunica madurez tecnica.
+            La interfaz también comunica madurez técnica.
           </h2>
           <p className="mt-6 text-base leading-7 text-white/72 sm:text-lg sm:leading-8">
-            El sitio ahora reserva un espacio claro para la capa de software: visualizacion en
+            El sitio ahora reserva un espacio claro para la capa de software: visualización en
             tiempo real, consola operativa, seleccion de canales y una experiencia que se siente
             como producto oficial, no como herramienta improvisada.
           </p>
