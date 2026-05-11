@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 import Icon from "./Icon";
 import heroSlides from "../data/heroSlides";
-import deviceRender from "../assets/perspectiva.png";
-import guiCapture from "../img/GUI.png";
+import guiSlide from "../img/slide_gui.png";
 import prostheticsRender from "../img/render_protesis.png";
+import signalSlide from "../img/slide_neurion_signal.png";
 
-function HeroVisual({ panel, status }) {
+function HeroVisual({ panel }) {
   if (panel === "signal") {
     return (
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[2.5rem] border border-white/75 bg-gradient-to-br from-[#E8ECEF] via-[#D8DBDE] to-[#EEF8F2] p-6 shadow-[0_32px_90px_-42px_rgba(31,37,43,0.45)] sm:p-8">
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#E8ECEF] via-[#D8DBDE] to-[#EEF8F2] p-3 sm:p-4">
         <div className="absolute left-10 top-10 h-28 w-28 rounded-full bg-[#38B26D]/14 blur-3xl" />
         <div className="absolute right-6 top-14 h-36 w-36 rounded-full bg-[#30C7D9]/16 blur-3xl" />
         <div
@@ -22,18 +22,20 @@ function HeroVisual({ panel, status }) {
           }}
         />
 
-        <img
-          src={deviceRender}
-          alt="Render de Neurion Signal con carcasa grafito, conexiones frontales y cubierta transparente superior."
-          className="relative z-10 mx-auto w-full max-w-[430px] object-contain drop-shadow-[0_24px_34px_rgba(31,37,43,0.22)]"
-        />
+        <div className="relative z-10 w-full overflow-hidden rounded-[2rem]">
+          <img
+            src={signalSlide}
+            alt="Slide de Neurion Signal con el dispositivo al centro y las señales biomédicas destacadas alrededor."
+            className="block h-full w-full rounded-[2rem] object-cover object-center"
+          />
+        </div>
       </div>
     );
   }
 
   if (panel === "prosthetics") {
     return (
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[2.5rem] border border-white/75 bg-gradient-to-br from-[#F7FBFC] via-white to-[#E8F8FA] p-5 shadow-[0_32px_90px_-42px_rgba(31,37,43,0.38)] sm:p-6">
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#F7FBFC] via-white to-[#E8F8FA] p-5 sm:p-6">
         <div className="absolute left-8 top-8 h-24 w-24 rounded-full bg-[#30C7D9]/14 blur-3xl" />
         <div className="absolute right-10 bottom-10 h-28 w-28 rounded-full bg-[#38B26D]/12 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.05]" aria-hidden="true">
@@ -58,7 +60,7 @@ function HeroVisual({ panel, status }) {
 
   if (panel === "gui") {
     return (
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[2.5rem] border border-white/75 bg-gradient-to-br from-[#F4FBFD] via-white to-[#EEF4F8] p-4 shadow-[0_32px_90px_-42px_rgba(31,37,43,0.35)] sm:p-5">
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#F4FBFD] via-white to-[#EEF4F8] p-4 sm:p-5">
         <div className="absolute left-8 top-8 h-24 w-24 rounded-full bg-[#30C7D9]/14 blur-3xl" />
         <div className="absolute right-8 bottom-8 h-24 w-24 rounded-full bg-[#38B26D]/12 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.05]" aria-hidden="true">
@@ -72,11 +74,11 @@ function HeroVisual({ panel, status }) {
           </svg>
         </div>
 
-        <div className="relative z-10 w-full overflow-hidden rounded-[1.8rem] border border-[#DCE3E8] bg-white p-3 shadow-[0_24px_50px_-32px_rgba(31,37,43,0.35)] sm:p-4">
+        <div className="relative z-10 w-full overflow-hidden rounded-[2rem]">
           <img
-            src={guiCapture}
-            alt="Captura de la GUI propia de Neurion para adquisición, monitor en vivo y medición de señales."
-            className="block h-full w-full object-contain object-center"
+            src={guiSlide}
+            alt="Slide de la interfaz de Neurion con visualización de señales, paneles de control y elementos de adquisición."
+            className="block h-full w-full rounded-[2rem] object-contain object-center"
           />
         </div>
       </div>
@@ -205,7 +207,7 @@ export default function Hero() {
               <div
                 className={`mt-2 flex min-h-[260px] overflow-hidden rounded-[2.8rem] bg-gradient-to-br ${currentSlide.accent} p-1 sm:min-h-[300px] lg:min-h-0 lg:flex-1`}
               >
-                <HeroVisual panel={currentSlide.panel} status={currentSlide.status} />
+                <HeroVisual panel={currentSlide.panel} />
               </div>
 
               <div className="mt-4 flex flex-col gap-4 border-t border-[#E6EDF1] pt-4">

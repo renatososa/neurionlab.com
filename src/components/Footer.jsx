@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="border-t border-[#DCE3E8] bg-[#F7F9FA] py-10">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[0.95fr_1.05fr_1fr] lg:px-8">
         <div className="max-w-xl">
-          <BrandLogo showTagline />
+          <BrandLogo variant="v2" showTagline />
           <p className="mt-4 text-sm leading-6 text-[#5E6A73]">
             Tecnología biomédica accesible para investigación, educación y asistencia.
           </p>
@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#5E6A73]">
-              Navegacion
+              Navegación
             </p>
             <div className="mt-4 flex flex-col gap-2 text-sm font-medium text-[#5E6A73]">
               {flatLinks.map((item) => (
@@ -42,7 +42,7 @@ export default function Footer() {
                 Sistemas protésicos
               </a>
               <a href="#recursos" className="transition hover:text-[#1F252B]">
-                Recursos y documentacion
+                Recursos y documentación
               </a>
             </div>
           </div>

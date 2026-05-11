@@ -5,23 +5,23 @@ const solutions = [
   {
     id: "educacion",
     icon: "graduation",
-    title: "Educacion",
-    text: "Guías curriculares, laboratorios progresivos y una experiencia guiada para cursos de bioinstrumentación, neurotecnología y señales.",
-    bullets: ["Practicas paso a paso", "Lenguaje claro para aula", "Recursos listos para docencia"],
+    title: "Educación",
+    text: "Recursos, prácticas guiadas y secuencias de laboratorio pensadas para enseñar bioinstrumentación, neurotecnología y análisis de señales con una base técnica clara.",
+    bullets: ["Prácticas estructuradas", "Material didáctico", "Implementación en aula"],
   },
   {
     id: "investigacion",
     icon: "microscope",
-    title: "Investigacion",
-    text: "Especificaciones, lectura multicanal y una base de software preparada para filtros, marcadores y validación temprana de experimentos.",
+    title: "Investigación",
+    text: "Adquisición multicanal, lectura de señal y herramientas de software orientadas a ensayos, validación experimental y procesamiento posterior de datos.",
     bullets: ["Precisión de señal", "Escalabilidad de canales", "Exportación para análisis"],
   },
   {
     id: "prototipado",
-    icon: "cable",
+    icon: "gear",
     title: "Prototipado",
-    text: "Diseno para fabricacion digital, piezas 3D y una capa abierta para makers, tesis y desarrollos de interfaces fisicas.",
-    bullets: ["Fabricacion 3D / PLA+", "Open hardware parcial", "Integracion con dispositivos externos"],
+    text: "Base técnica para integrar biopotenciales en desarrollos experimentales, interfaces físicas, dispositivos conectados y proyectos de asistencia tecnológica.",
+    bullets: ["Integración con hardware", "Fabricación digital", "Desarrollo experimental"],
   },
 ];
 
@@ -32,11 +32,12 @@ export default function SolutionsSection() {
         <div className="max-w-3xl">
           <SectionLabel>Soluciones por perfil</SectionLabel>
           <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] text-[#1F252B] sm:text-4xl md:text-5xl">
-            No todos llegan a Neurion LAB buscando lo mismo.
+            Una misma plataforma para formación, investigación y desarrollo experimental.
           </h2>
           <p className="mt-6 text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
-            La plataforma se organiza por objetivos concretos para que cada visitante encuentre su
-            camino sin perder de vista el ecosistema completo.
+            Neurion LAB organiza su propuesta según perfiles de uso concretos. De ese modo, cada
+            institución, laboratorio o equipo puede identificar con claridad qué recursos y
+            capacidades resultan más relevantes para su trabajo.
           </p>
         </div>
 

@@ -1,39 +1,34 @@
-# Node.js
+# Node.js / JavaScript
 node_modules/
 dist/
-.DS_Store
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+
+# Dependencies
 package-lock.json
-npm-shrinkwrap.json
 yarn.lock
 .pnpm-debug.log
 
-# Environment files
+# Runtime files
 .env
 .env.local
 .env.*.local
 
-# VS Code
-.vscode/
-
 # Logs
 logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
 
 # Temporary files
 *.tmp
 *.temp
 *.swp
 *.swo
-
-# Build output
-build/
-coverage/
-
-# OS files
-Thumbs.db
-ehthumbs.db
-Desktop.ini

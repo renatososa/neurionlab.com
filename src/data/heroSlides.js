@@ -29,15 +29,15 @@ const heroSlides = [
   },
   {
     id: "protesis",
-    label: "Protesis",
-    eyebrow: "Línea en validación",
+    label: "Prótesis",
+    eyebrow: "Línea en desarrollo",
     title: "Sistemas protésicos",
     description:
       "Desarrollo de soluciones mecánicas y mioeléctricas basadas en fabricación digital, control modular y experimentación aplicada.",
     bullets: ["Control mioeléctrico", "Piezas impresas en 3D", "Validación experimental"],
     primaryCta: { label: "Conocer el proyecto", href: "#protesis" },
     secondaryCta: null,
-    status: "En validación",
+    status: "En desarrollo",
     accent: "from-[#30C7D9]/16 via-white to-[#38B26D]/10",
     panel: "prosthetics",
   },

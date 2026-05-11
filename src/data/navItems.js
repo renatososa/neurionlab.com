@@ -7,12 +7,7 @@ const navItems = [
         label: "Sistemas protésicos",
         href: "#protesis",
         description: "Control mioeléctrico y asistencia en desarrollo.",
-        badge: "Beta",
-      },
-      {
-        label: "Kits educativos",
-        href: "#kits",
-        description: "Hardware modular para aula y prácticas guiadas.",
+        badge: "En desarrollo",
       },
     ],
   },
@@ -21,10 +16,10 @@ const navItems = [
     children: [
       { label: "Educación", href: "#educacion", description: "Guías curriculares y laboratorios aplicados." },
       { label: "Investigación", href: "#investigacion", description: "Precisión, filtros y lectura de señal." },
-      { label: "Prototipado", href: "#prototipado", description: "Fabricacion digital y open hardware." },
+      { label: "Prototipado", href: "#prototipado", description: "Fabricación digital y open hardware." },
     ],
   },
-  { label: "Recursos", href: "#recursos" },
+  { label: "Software", href: "#recursos" },
   { label: "Sobre nosotros", href: "#sobre" },
   { label: "Contacto", href: "#contacto" },
 ];

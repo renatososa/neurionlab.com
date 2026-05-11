@@ -1,10 +1,10 @@
 import SectionLabel from "./SectionLabel";
 
 const validationItems = [
-  "Tecnología creada en Uruguay",
-  "Pensada para universidades y laboratorios",
-  "Lista para congresos y demos técnicas",
-  "Escalable hacia proyectos de asistencia",
+  "Acceso más simple a bioinstrumentación",
+  "Pensada para instituciones educativas y laboratorios",
+  "Base para formar, investigar y prototipar",
+  "Capacidades locales en diseño, soporte y fabricación",
 ];
 
 export default function MissionStrip() {
@@ -12,13 +12,14 @@ export default function MissionStrip() {
     <section className="border-y border-[#DCE3E8] bg-white py-8 sm:py-10">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
         <div>
-          <SectionLabel>Mision</SectionLabel>
+          <SectionLabel>Misión</SectionLabel>
           <h2 className="mt-4 text-2xl font-bold tracking-[-0.04em] text-[#1F252B] sm:text-3xl">
-            Tecnología biomédica desde Uruguay para el mundo.
+            Tecnología biomédica accesible para aprender, investigar y crear.
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5E6A73] sm:text-base">
-            Neurion LAB organiza hardware, software y fabricacion abierta como una plataforma que
-            puede crecer por productos, perfiles de uso y alianzas institucionales.
+            Neurion LAB integra hardware, software y herramientas abiertas para democratizar el
+            acceso a la bioinstrumentación y facilitar el desarrollo de capacidades locales en
+            educación, investigación y tecnologías de asistencia.
           </p>
         </div>
 

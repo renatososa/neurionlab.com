@@ -13,7 +13,7 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#DCE3E8]/70 bg-white/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
         <a href="#inicio" aria-label="Ir al inicio" className="shrink-0">
-          <BrandLogo />
+          <BrandLogo variant="v2" />
         </a>
 
         <nav className="hidden items-center gap-3 lg:flex">

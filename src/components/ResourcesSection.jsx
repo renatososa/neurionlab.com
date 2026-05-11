@@ -3,11 +3,11 @@ import SectionLabel from "./SectionLabel";
 const resources = [
   {
     title: "GUI en Python",
-    text: "Descargas, manuales de instalacion y estructura para demostrar que la capa de software es parte del producto.",
+    text: "Descargas, manuales de instalación y estructura para demostrar que la capa de software es parte del producto.",
   },
   {
     title: "Archivos 3D y hardware",
-    text: "Piezas, STL y elementos de fabricacion digital para aula, prototipos y evolucion abierta del sistema.",
+    text: "Piezas, STL y elementos de fabricación digital para aula, prototipos y evolución abierta del sistema.",
   },
   {
     title: "Manuales y laboratorios",
@@ -23,11 +23,11 @@ export default function ResourcesSection() {
           <div>
             <SectionLabel>Recursos</SectionLabel>
             <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] text-[#1F252B] sm:text-4xl md:text-5xl">
-              Un centro de documentacion para todo el ecosistema.
+              Un centro de documentación para todo el ecosistema.
             </h2>
           </div>
           <p className="text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
-            Esta seccion ya puede concentrar descargas, archivos de impresion, manuales, GUI,
+            Esta sección ya puede concentrar descargas, archivos de impresión, manuales, GUI,
             tutoriales y ejemplos de laboratorio sin dispersarlos por toda la home.
           </p>
         </div>
@@ -48,11 +48,11 @@ export default function ResourcesSection() {
                 Estructura sugerida
               </p>
               <h3 className="mt-3 text-2xl font-bold text-[#1F252B]">
-                Documentacion por producto y por perfil de uso.
+                Documentación por producto y por perfil de uso.
               </h3>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
-              {["Signal / Specs", "Educacion / Labs", "GUI / Manuales", "3D / Fabricacion"].map((item) => (
+              {["Signal / Specs", "Educación / Labs", "GUI / Manuales", "3D / Fabricación"].map((item) => (
                 <div key={item} className="rounded-2xl border border-[#DCE3E8] bg-white px-4 py-3 text-sm font-semibold text-[#1F252B]">
                   {item}
                 </div>

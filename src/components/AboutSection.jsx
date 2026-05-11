@@ -11,15 +11,16 @@ export default function AboutSection() {
             <div>
               <SectionLabel dark>Sobre Neurion LAB</SectionLabel>
               <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] sm:text-4xl md:text-5xl">
-                De una herramienta puntual a una plataforma con impacto social.
+                Tecnología biomédica accesible para formación, investigación y asistencia.
               </h2>
             </div>
             <div>
               <p className="text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
                 Neurion LAB nace para desarrollar herramientas biomédicas accesibles que permitan
                 formar, investigar y prototipar soluciones de neurotecnología y asistencia. La
-                nueva arquitectura refuerza esa visión: democratización, trabajo regional,
-                fabricación local y una expansión ordenada hacia nuevas líneas de producto.
+                arquitectura de marca refuerza esa visión: democratización del acceso a la
+                tecnología, fortalecimiento de capacidades locales y una expansión ordenada hacia
+                nuevas líneas de producto.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -31,12 +32,6 @@ export default function AboutSection() {
                     {item}
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-8 rounded-[1.8rem] border border-white/10 bg-white/5 p-5 text-sm leading-7 text-white/72">
-                Espacio ideal para incorporar despues evidencia concreta de alianzas, trabajo con
-                fundaciones, congresos y validaciones institucionales sin rehacer la estructura de
-                la home.
               </div>
             </div>
           </div>

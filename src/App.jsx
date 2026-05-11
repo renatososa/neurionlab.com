@@ -1,12 +1,9 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MissionStrip from "./components/MissionStrip";
-import OverviewSection from "./components/OverviewSection";
 import ProductSection from "./components/ProductSection";
 import SolutionsSection from "./components/SolutionsSection";
-import Applications from "./components/Applications";
-import SoftwareSection from "./components/SoftwareSection";
-import ResourcesSection from "./components/ResourcesSection";
+import SignalSection from "./components/SignalSection";
 import AboutSection from "./components/AboutSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -24,12 +21,9 @@ export default function App() {
       <Header />
       <Hero />
       <MissionStrip />
-      <OverviewSection />
       <ProductSection />
       <SolutionsSection />
-      <Applications />
-      <SoftwareSection />
-      <ResourcesSection />
+      <SignalSection />
       <AboutSection />
       <Contact />
       <Footer />

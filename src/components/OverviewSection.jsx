@@ -14,8 +14,8 @@ const overviewItems = [
   },
   {
     icon: "layers",
-    title: "Fabricacion abierta",
-    text: "Archivos, piezas y documentacion preparados para impresion 3D, iteracion local y proyectos de hardware abierto.",
+    title: "Fabricación abierta",
+    text: "Archivos, piezas y documentación preparados para impresión 3D, iteración local y proyectos de hardware abierto.",
   },
 ];
 

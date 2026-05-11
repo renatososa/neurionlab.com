@@ -7,25 +7,25 @@ const products = [
     id: "signal",
     status: "Disponible",
     title: "Neurion Signal",
-    text: "Adquisicion de biopotenciales para EEG, EMG y ECG con una narrativa de producto lista para academia, I+D y prototipado.",
-    bullets: ["8 a 32 canales", "Visualizacion en tiempo real", "Software propio", "Soporte local"],
+    text: "Adquisición de biopotenciales para EEG, EMG y ECG con una narrativa de producto lista para academia, I+D y prototipado.",
+    bullets: ["8 a 32 canales", "Visualización en tiempo real", "Software propio", "Soporte local"],
     icon: "signal",
   },
   {
-    id: "protesis",
-    status: "Beta",
-    title: "Sistemas protésicos",
-    text: "Línea futura enfocada en control mioeléctrico, modularidad mecánica y asistencia accesible mediante fabricación digital.",
-    bullets: ["Mioelectrico", "Piezas 3D", "Validacion de uso", "Evolucion abierta"],
-    icon: "handheart",
+    id: "kits",
+    status: "Disponible",
+    title: "Kits educativos",
+    text: "Plataforma plug and play para educación, pensada para implementar prácticas de bioinstrumentación con protocolos experimentales, actividades guiadas y materiales multimedia listos para usar.",
+    bullets: ["Protocolos experimentales", "Actividades prácticas", "Materiales multimedia", "Implementación plug and play"],
+    icon: "graduation",
   },
   {
-    id: "kits",
-    status: "Roadmap",
-    title: "Kits educativos",
-    text: "Hardware modular para aula, prácticas guiadas y recursos que ayuden a entrar al ecosistema sin una curva técnica agresiva.",
-    bullets: ["Laboratorios listos", "Aula modular", "Recursos descargables", "Trayectos por nivel"],
-    icon: "graduation",
+    id: "protesis",
+    status: "En desarrollo",
+    title: "Sistemas protésicos",
+    text: "Línea futura enfocada en control mioeléctrico, modularidad mecánica y asistencia accesible mediante fabricación digital.",
+    bullets: ["Mioeléctrico", "Piezas 3D", "Validación de uso", "Evolución abierta"],
+    icon: "handheart",
   },
 ];
 
@@ -36,11 +36,13 @@ export default function ProductSection() {
         <div className="max-w-3xl">
           <SectionLabel>Productos</SectionLabel>
           <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] text-[#1F252B] sm:text-4xl md:text-5xl">
-            La home ya puede mostrar una familia de herramientas, no un unico lanzamiento.
+            Líneas de producto para educación, investigación y desarrollo aplicado.
           </h2>
           <p className="mt-6 text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
-            La arquitectura propuesta funciona porque ordena lo disponible hoy, lo que esta en
-            validación y lo que puede crecer como puerta de entrada educativa.
+            La propuesta de producto de Neurion LAB reúne una plataforma de adquisición de
+            biopotenciales, kits educativos para prácticas de laboratorio y una línea de sistemas protésicos en
+            desarrollo. Cada línea responde a necesidades concretas de formación, experimentación y
+            asistencia tecnológica.
           </p>
         </div>
 
@@ -75,47 +77,6 @@ export default function ProductSection() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-[2rem] border border-[#DCE3E8] bg-[#1F252B] p-6 text-white shadow-sm">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/60">
-                Narrativa de marca
-              </p>
-              <h3 className="mt-2 text-2xl font-bold">
-                Disponible, en validación y en roadmap: todo convive sin confundir al visitante.
-              </h3>
-            </div>
-            <div className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/80">
-              Estado explicito
-            </div>
-          </div>
-          <div className="mt-6 grid gap-3 sm:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <p className="text-sm font-semibold text-white">Disponible</p>
-              <p className="mt-2 text-sm leading-6 text-white/70">
-                Lo que ya puede demostrarse y cotizarse con confianza.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <p className="text-sm font-semibold text-white">Beta</p>
-              <p className="mt-2 text-sm leading-6 text-white/70">
-                Proyectos honestamente etiquetados para generar expectativa sin sobreprometer.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <p className="text-sm font-semibold text-white">Recursos</p>
-              <p className="mt-2 text-sm leading-6 text-white/70">
-                Documentacion y piezas como acelerador de adopcion.
-              </p>
-            </div>
-          </div>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button href="#contacto">Solicitar información</Button>
-            <Button href="#recursos" variant="secondary">
-              Explorar documentacion
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );

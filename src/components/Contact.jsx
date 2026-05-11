@@ -2,6 +2,8 @@ import { useState } from "react";
 import Button from "./Button";
 import SectionLabel from "./SectionLabel";
 
+const formspreeEndpoint = "https://formspree.io/f/xvzldgba";
+
 const initialForm = {
   name: "",
   institution: "",
@@ -20,6 +22,26 @@ export default function Contact({ onSubmit }) {
     setForm((current) => ({ ...current, [name]: value }));
   }
 
+  async function submitToFormspree(payload) {
+    const body = new FormData();
+
+    Object.entries(payload).forEach(([key, value]) => {
+      body.append(key, value);
+    });
+
+    const response = await fetch(formspreeEndpoint, {
+      method: "POST",
+      body,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("FORM_SUBMISSION_FAILED");
+    }
+  }
+
   async function handleSubmit(event) {
     event.preventDefault();
     setStatus("submitting");
@@ -35,17 +57,16 @@ export default function Contact({ onSubmit }) {
     try {
       if (onSubmit) {
         await onSubmit(payload);
-        setForm(initialForm);
-        setFeedback("Consulta enviada. El formulario ya esta listo para integrarse con backend o email.");
       } else {
-        setFeedback(
-          "Formulario listo para integracion. Podes conectarlo luego a un backend, Resend, Formspree o email transaccional."
-        );
+        await submitToFormspree(payload);
       }
+
+      setForm(initialForm);
       setStatus("success");
-    } catch {
+      setFeedback("Consulta enviada correctamente. Te responderemos a la brevedad.");
+    } catch (error) {
       setStatus("error");
-      setFeedback("No se pudo enviar la consulta. Revisa la integracion del servicio.");
+      setFeedback("No se pudo enviar la consulta. Intentá nuevamente en unos minutos.");
     }
   }
 
@@ -55,31 +76,19 @@ export default function Contact({ onSubmit }) {
         <div className="max-w-xl">
           <SectionLabel>Contacto</SectionLabel>
           <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] text-[#1F252B] sm:text-4xl md:text-5xl">
-            Conversemos sobre tu laboratorio, curso o roadmap de producto.
+            Conversemos sobre tu laboratorio, curso o proyecto.
           </h2>
           <p className="mt-6 text-base leading-7 text-[#5E6A73] sm:text-lg sm:leading-8">
-            Si formas parte de una institución, laboratorio, centro educativo o proyecto vinculado
-            a neurotecnología, bioinstrumentación o asistencia tecnológica, esta nueva estructura
-            ya permite pedir demos, recursos o colaboraciones sin mezclar necesidades distintas.
+            Si formás parte de una institución, laboratorio, centro educativo o proyecto vinculado
+            a neurotecnología, bioinstrumentación o asistencia tecnológica, podemos conversar sobre
+            demostraciones, implementación y posibles líneas de trabajo.
           </p>
-
-          <div className="mt-8 rounded-[2rem] border border-[#DCE3E8] bg-[#F7F9FA] p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#5E6A73]">
-              Integracion preparada
-            </p>
-            <p className="mt-3 text-sm leading-6 text-[#5E6A73]">
-              El componente ya expone un `onSubmit`, genera un payload consistente y usa campos con
-              `name`, `autoComplete` y `required` para poder conectarlo luego a backend o servicios
-              de email sin rehacer la UI.
-            </p>
-          </div>
         </div>
 
         <form
           onSubmit={handleSubmit}
           className="rounded-[2rem] border border-[#DCE3E8] bg-[#F7F9FA] p-6 shadow-sm sm:p-7"
         >
-          <input type="hidden" name="source" defaultValue="neurion-lab-landing" />
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="block">
               <span className="mb-2 block text-sm font-semibold text-[#1F252B]">Nombre</span>
@@ -95,7 +104,7 @@ export default function Contact({ onSubmit }) {
             </label>
 
             <label className="block">
-              <span className="mb-2 block text-sm font-semibold text-[#1F252B]">Institucion</span>
+              <span className="mb-2 block text-sm font-semibold text-[#1F252B]">Institución</span>
               <input
                 name="institution"
                 value={form.institution}
@@ -132,7 +141,7 @@ export default function Contact({ onSubmit }) {
                 <option>Demo institucional</option>
                 <option>Recursos educativos</option>
                 <option>Colaboración de investigación</option>
-                <option>Proyecto protesico</option>
+                <option>Proyecto protésico</option>
                 <option>Desarrollo a medida</option>
               </select>
             </label>
@@ -146,7 +155,7 @@ export default function Contact({ onSubmit }) {
               onChange={handleChange}
               required
               className="min-h-36 w-full rounded-2xl border border-[#DCE3E8] bg-white px-4 py-3 outline-none transition focus:border-[#38B26D]"
-              placeholder="Contanos brevemente que necesitas."
+              placeholder="Contanos brevemente qué necesitás."
             />
           </label>
 
@@ -154,9 +163,6 @@ export default function Contact({ onSubmit }) {
             <Button type="submit" disabled={status === "submitting"} className="w-full sm:w-auto">
               {status === "submitting" ? "Enviando..." : "Enviar consulta"}
             </Button>
-            <p className="text-xs leading-5 text-[#5E6A73]">
-              Preparado para email transaccional, API propia o servicio de formularios.
-            </p>
           </div>
 
           {feedback ? (
